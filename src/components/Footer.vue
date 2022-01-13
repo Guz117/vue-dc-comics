@@ -57,7 +57,7 @@
         </div>
         <div class="footer-social">
             <div class="social">
-                <span class="sign-up">SIGN-UP NOW!</span>
+                <span class="sign-up"><a href="">SIGN-UP NOW!</a></span>
                 <div class="footer-follow">
                     <span class="follows">FOLLOW US</span>
                     <ul class="ul-social">
@@ -95,7 +95,7 @@ export default {
 <style lang="scss" scoped>
     .container {
         width: 100%;
-        height: 500px;
+        height: 400px;
     }
 
     .footer {
@@ -144,6 +144,7 @@ export default {
         width: 53%;
         height: 100%;
         background:  url(../assets/img/dc-logo-bg.png);
+        background-position: center;
     }
 
     .footer-social {
@@ -179,6 +180,11 @@ export default {
         color: white;
         border: 2px solid #0282f9;
         padding: 0.7em;
+
+        & a {
+            text-decoration: none;
+            color: white;
+        }
     }
 
     .ul-social {

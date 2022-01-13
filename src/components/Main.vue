@@ -48,7 +48,7 @@ export default {
 
     .menu {
         height: 100%;
-        height: 150px;
+        height: 120px;
         background-color: #0282f9;
         display: flex;
         align-items: center;
