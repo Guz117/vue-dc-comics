@@ -62,19 +62,19 @@
                     <span class="follows">FOLLOW US</span>
                     <ul class="ul-social">
                         <li class="list-social">
-                            <img src="../assets/img/footer-facebook.png" alt="">
+                            <a href=""><img src="../assets/img/footer-facebook.png" alt=""></a>
                         </li> 
                         <li class="list-social">
-                            <img src="../assets/img/footer-twitter.png" alt="">
+                            <a href=""><img src="../assets/img/footer-twitter.png" alt=""></a>
                         </li>
                         <li class="list-social">
-                            <img src="../assets/img/footer-youtube.png" alt="">
+                            <a href=""><img src="../assets/img/footer-youtube.png" alt=""></a>
                         </li>
                         <li class="list-social">
-                            <img src="../assets/img/footer-pinterest.png" alt="">  
+                            <a href=""><img src="../assets/img/footer-pinterest.png" alt=""></a>  
                         </li>
                         <li class="list-social">
-                            <img src="../assets/img/footer-periscope.png" alt="">
+                            <a href=""><img src="../assets/img/footer-periscope.png" alt=""></a>
                         </li>  
                     </ul> 
                 </div>
@@ -141,9 +141,10 @@ export default {
     }
 
     .logo-info {
-        width: 53%;
+        width: 52%;
         height: 100%;
         background:  url(../assets/img/dc-logo-bg.png);
+        background-repeat: no-repeat;
         background-position: center;
     }
 
