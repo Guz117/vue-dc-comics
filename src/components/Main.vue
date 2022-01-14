@@ -163,6 +163,7 @@ export default {
         padding: 70px 0;
         display: flex;
         flex-wrap: wrap;
+        gap: 10px
     }
 
     .load {

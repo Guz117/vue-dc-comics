@@ -101,6 +101,8 @@ export default {
     }
 
     .footer {
+        display: flex;
+        justify-content: flex-end;
         width: 100%;
         height: 80%;
         background: url(../assets/img/footer-bg.jpg);
@@ -108,14 +110,15 @@ export default {
 
     .info {
         display: flex;
-        width: 70%;
+        justify-content: flex-end;
+        width: 90%;
         height: 100%;
-        margin: 0 auto;
+        
     }
 
     .social-info {
         display: flex;
-        width: 47%;
+        width: 40%;
         height: 100%;
     }
 
@@ -143,7 +146,7 @@ export default {
     }
 
     .logo-info {
-        width: 52%;
+        width: 60%;
         height: 100%;
         background:  url(../assets/img/dc-logo-bg.png);
         background-repeat: no-repeat;

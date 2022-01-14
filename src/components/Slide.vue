@@ -22,6 +22,7 @@ export default {
     height: 180px;
     margin: 10px;
     margin-bottom: 30px;
+    flex-basis: calc((100% / 7) - 10px);
     img {
         width: 100%;
         height: 100%;
@@ -30,6 +31,7 @@ export default {
         color: white;
     }
 }
+
    
 
 </style>
