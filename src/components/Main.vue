@@ -18,26 +18,12 @@
             </div>
             <div class="menu">
                 <ul>
-                    <li>
-                        <img src="../assets/img/buy-comics-digital-comics.png" alt="">
-                        <span><a href="">DIGITAL COMICS</a></span>
-                    </li> 
-                    <li>
-                        <img src="../assets/img/buy-comics-merchandise.png" alt="">
-                        <span><a href="">DC MERCHANDISE</a></span>
-                    </li>
-                    <li>
-                        <img src="../assets/img/buy-comics-shop-locator.png" alt="">
-                        <span><a href="">SUBSCRIPTION</a></span>
-                    </li>
-                    <li>
-                        <img src="../assets/img/buy-comics-subscriptions.png" alt="">
-                        <span><a href="">COMICS SHOP LOCATOR</a></span>
-                    </li>
-                    <li>
-                        <img src="../assets/img/buy-dc-power-visa.svg" alt="">
-                        <span><a href="">DC POWER VISA</a></span>
-                    </li>  
+                    <Menu
+                        v-for="(element, index) in menuContent"
+                        :key= "index"
+                        :image= "element.img"
+                        :text= "element.text"
+                    />
                 </ul>
             </div>
         </div>
@@ -47,11 +33,13 @@
 <script>
 
 import Slide from './Slide.vue';
+import Menu from './Menu.vue';
 
 export default {
     name: 'Main',
     components: {
         Slide,
+        Menu
     },
     data() {
         return {
@@ -128,7 +116,30 @@ export default {
                     "series": "Catwoman",
                     "type": "graphic novel"
                 }
-                ]
+            ],
+
+            menuContent: [
+                {
+                    "img": require("../assets/img/buy-comics-digital-comics.png"),
+                    "text": 'DIGITAL COMICS',
+                },
+                {
+                    "img": require("../assets/img/buy-comics-merchandise.png"),
+                    "text": 'DC MERCHANDISE',
+                },
+                {
+                    "img": require("../assets/img/buy-comics-shop-locator.png"),
+                    "text": 'COMICS SHOP LOCATOR',
+                },
+                {
+                    "img": require("../assets/img/buy-comics-subscriptions.png"),
+                    "text": 'SUBSCRIPTION',
+                },
+                {
+                    "img":require("../assets/img/buy-dc-power-visa.svg"),
+                    "text": 'DC POWER VISA',
+                },
+            ]
         }
     }
 }
@@ -193,14 +204,7 @@ export default {
         color: white;
     }
 
-    span {
-        font-size: 0.9em;
-        padding-left: 0.5em;
-        & a {
-            text-decoration: none;
-            color: white;
-        }
-    }
+    
 
     img {
         padding-left: 1em;
